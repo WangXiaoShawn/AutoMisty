@@ -1,0 +1,7 @@
+[
+    {
+    "model": "gpt-4o",
+    "misty_ip": "YOUR_MISTY_ROBOT_IP_HERE",
+    "api_key": "YOUR_OPENAI_API_KEY_HERE"
+    }
+]

@@ -1,5 +1,5 @@
 # API Keys and Sensitive Configuration
-OAI_CONFIG_LIST.json
+# OAI_CONFIG_LIST.json  # Commented out to allow template upload
 *.key
 *.pem
 .env
