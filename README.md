@@ -2,77 +2,77 @@
 
 ## 🤖 AutoMisty: A Multi-Agent LLM Framework for Automated Code Generation in the Misty Social Robot (IROS2025)
 
-**论文链接**: https://arxiv.org/pdf/2503.06791  
-**Presentation demo**: 
+**Paper**: https://arxiv.org/pdf/2503.06791  
+**Presentation Demo**: 
 
 [![AutoMisty Official Presentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1724291960/video_to_markdown/images/youtube--MWbNXMBj0YA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=MWbNXMBj0YA "AutoMisty Official Presentation")
 
-AutoMisty是一个基于多智能体大语言模型的框架，专为Misty社交机器人自动化代码生成而设计。该项目在IROS2025会议上发表，提供了完整的机器人交互、感知、规划和动作执行能力。
+AutoMisty is a multi-agent large language model framework designed for automated code generation in Misty social robots. This project was published at IROS2025 and provides comprehensive robot interaction, perception, planning, and action execution capabilities.
 
 ---
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 AutoMistyIROS2025/
-├── AutoMisty.py              # 🚀 主程序入口
-├── Agents/                   # 🧠 多智能体模块
-│   ├── MistyActionAgent.py   # 动作智能体
-│   ├── MistyPerceptionAgent.py # 感知智能体
-│   ├── MistyPlanAgent.py     # 规划智能体
-│   ├── MistyEventAgent.py    # 事件智能体
+├── AutoMisty.py              # 🚀 Main program entry
+├── Agents/                   # 🧠 Multi-agent modules
+│   ├── MistyActionAgent.py   # Action agent
+│   ├── MistyPerceptionAgent.py # Perception agent
+│   ├── MistyPlanAgent.py     # Planning agent
+│   ├── MistyEventAgent.py    # Event agent
 │   └── ...
-├── code/mistyPy/             # 🎯 核心代码库
-│   ├── CUBS_Misty.py         # 🔥 机器人核心类（必须保留）
-│   ├── RobotCommands.py      # 🔥 基础命令类（必须保留）
-│   └── [生成的代码文件]       # AutoMisty自动生成的代码
-├── DB/                       # 🧲 向量数据库
-│   ├── misty_action_db/      # 动作记忆数据库
-│   ├── misty_perception_db/  # 感知记忆数据库
-│   ├── misty_plan_db/        # 规划记忆数据库
-│   └── misty_event_db/       # 事件记忆数据库
-├── Mistydemo/                # 📚 论文实验代码
-│   ├── SimpleTask/           # 简单任务示例
-│   ├── CompoundTask/         # 复合任务示例
-│   ├── ComplexTask/          # 复杂任务示例
-│   └── ElementaryTask/       # 基础任务示例
-├── OAI_CONFIG_LIST.json      # 🔑 API配置文件
-└── requirements.txt          # 📦 依赖列表
+├── code/mistyPy/             # 🎯 Core code library
+│   ├── CUBS_Misty.py         # 🔥 Robot core class (must preserve)
+│   ├── RobotCommands.py      # 🔥 Basic command class (must preserve)
+│   └── [generated files]     # AutoMisty auto-generated code
+├── DB/                       # 🧲 Vector database
+│   ├── misty_action_db/      # Action memory database
+│   ├── misty_perception_db/  # Perception memory database
+│   ├── misty_plan_db/        # Planning memory database
+│   └── misty_event_db/       # Event memory database
+├── Mistydemo/                # 📚 Paper experiment code
+│   ├── SimpleTask/           # Simple task examples
+│   ├── CompoundTask/         # Compound task examples
+│   ├── ComplexTask/          # Complex task examples
+│   └── ElementaryTask/       # Elementary task examples
+├── OAI_CONFIG_LIST.json      # 🔑 API configuration file
+└── requirements.txt          # 📦 Dependencies list
 ```
 
 ---
 
-## 🛠️ 安装配置
+## 🛠️ Installation & Configuration
 
-### 1. 环境要求
+### 1. System Requirements
 
 - **Python**: 3.8+
-- **操作系统**: macOS（⚠️ 推荐使用macOS，因为项目使用视频流在本地运行，请不要在服务器上运行或尝试路由到本地）
-- **硬件**: Misty II 机器人
+- **Operating System**: macOS (⚠️ macOS is recommended because this project uses video streaming locally. Please do not run on servers or attempt to route to local)
+- **Hardware**: Misty II Robot
 
-### 2. 克隆项目
+### 2. Clone Repository
 
 ```bash
 git clone <repository-url>
 cd AutoMistyIROS2025
 ```
 
-### 3. 安装依赖
+### 3. Install Dependencies
 
-推荐使用虚拟环境：
+Using virtual environment is recommended:
 
 ```bash
-# 创建虚拟环境
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 
-# 安装所有依赖
+# Install all dependencies
 pip install -r requirements.txt
 ```
 
-### 4. 配置 API 密钥和 Misty IP
+### 4. Configure API Keys and Misty IP
 
-编辑 `OAI_CONFIG_LIST.json` 文件：
+Edit the `OAI_CONFIG_LIST.json` file:
 
 ```json
 [
@@ -84,48 +84,48 @@ pip install -r requirements.txt
 ]
 ```
 
-**重要提示**：
-- 将 `YOUR_OPENAI_API_KEY_HERE` 替换为您的OpenAI API密钥
-- 将 `YOUR_MISTY_ROBOT_IP_HERE` 替换为您的Misty机器人IP地址
+**Important Notes**:
+- Replace `YOUR_OPENAI_API_KEY_HERE` with your OpenAI API key
+- Replace `YOUR_MISTY_ROBOT_IP_HERE` with your Misty robot IP address
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 运行主程序
+### Run Main Program
 
 ```bash
 python AutoMisty.py
 ```
 
-### 使用指南
+### Usage Guide
 
-1. **启动程序后**，请遵循代码给出的提示来运行
+1. **After starting the program**, please follow the prompts provided by the code
 
-2. **MEM系统**：对于您认为有帮助的代码，请输入`MEM`，系统会自动将其存入本地数据库，在下次有相同任务时会自动检索相关代码
+2. **MEM System**: For code you find helpful, type `MEM` and the system will automatically store it in the local database for retrieval when similar tasks arise
 
-3. **AV流交互**：当有音视频流与您交互时，测试完毕请使用 `Ctrl+X` 退出AV界面，以维持与AutoMisty的持续交互
+3. **AV Stream Interaction**: When audio/video streams interact with you, use `Ctrl+X` to exit the AV interface after testing to maintain continuous interaction with AutoMisty
 
-4. **代码生成**：AutoMisty生成的所有代码都保存在 `code/mistyPy/` 文件夹内
-
----
-
-## 🔥 核心组件（禁止删除）
-
-### CUBS_Misty.py 和 RobotCommands.py
-
-⚠️ **重要警告**：AutoMisty生成的所有代码都会继承 `CUBS_Misty.py` 中的 `Robot` 类，因此**请不要删除**以下核心文件：
-
-- **`CUBS_Misty.py`**: 机器人核心功能类
-- **`RobotCommands.py`**: 基础API命令类
-
-这两个文件是整个系统的基础架构，删除将导致所有生成的代码无法运行。
+4. **Code Generation**: All code generated by AutoMisty is saved in the `code/mistyPy/` folder
 
 ---
 
-## 📄 引用
+## 🔥 Core Components (Do Not Delete)
 
-如果您在研究中使用了AutoMisty，请引用以下论文：
+### CUBS_Misty.py and RobotCommands.py
+
+⚠️ **Important Warning**: All code generated by AutoMisty inherits from the `Robot` class in `CUBS_Misty.py`, therefore **DO NOT DELETE** the following core files:
+
+- **`CUBS_Misty.py`**: Robot core functionality class
+- **`RobotCommands.py`**: Basic API command class
+
+These two files are the fundamental architecture of the entire system. Deleting them will cause all generated code to fail.
+
+---
+
+## 📄 Citation
+
+If you use AutoMisty in your research, please cite the following paper:
 
 ```bibtex
 @article{wang2025automisty,
