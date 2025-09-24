@@ -1,0 +1,55 @@
+Academic Research License
+
+Copyright (c) 2025 Xiao Wang, Lu Dong, Sahana Rangasrinivasan, Ifeoma Nwogu, Srirangaraj Setlur, Venugopal Govindaraju
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use
+the Software solely for academic research, educational, and non-commercial
+purposes, subject to the following conditions:
+
+PERMITTED USES:
+- Academic research and study
+- Educational purposes in universities and research institutions
+- Non-commercial scientific experimentation
+- Publishing research results that reference this work
+
+PROHIBITED USES:
+- Any commercial use, including but not limited to:
+  * Selling or licensing the Software or derivatives
+  * Using the Software in commercial products or services
+  * Generating revenue from the Software in any form
+- Distribution for commercial purposes
+- Incorporation into commercial products or services
+
+CONDITIONS:
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. Any academic publication or research that uses this Software must cite the
+   original paper:
+   
+   Wang, X., Dong, L., Rangasrinivasan, S., Nwogu, I., Setlur, S., & 
+   Govindaraju, V. (2025). AutoMisty: A Multi-Agent LLM Framework for 
+   Automated Code Generation in the Misty Social Robot. 
+   arXiv preprint arXiv:2503.06791.
+
+3. Modifications and derivative works are permitted for academic research
+   purposes only, provided they are also subject to this same license.
+
+4. The Software may not be used in any way that could harm individuals,
+   society, or the environment.
+
+DISCLAIMER:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+For commercial licensing inquiries, please contact the authors at:
+[Contact information to be provided]
+
+This license is effective as of the date of first publication and shall remain
+in effect until terminated by the copyright holders.

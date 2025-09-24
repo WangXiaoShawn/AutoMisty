@@ -5,11 +5,14 @@
 **Paper**: https://arxiv.org/pdf/2503.06791  
 **Presentation Demo**: 
 
-[![AutoMisty Official Presentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1724291960/video_to_markdown/images/youtube--MWbNXMBj0YA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=MWbNXMBj0YA "AutoMisty Official Presentation")
+[![AutoMisty Official Presentation](assets/AutoMisty.png)](https://www.youtube.com/watch?v=MWbNXMBj0YA "AutoMisty Official Presentation")
+
 
 AutoMisty is a multi-agent large language model framework designed for automated code generation in Misty social robots. This project was published at IROS2025 and provides comprehensive robot interaction, perception, planning, and action execution capabilities.
 
 ---
+
+
 
 ## 📁 Project Structure
 
@@ -135,3 +138,16 @@ If you use AutoMisty in your research, please cite the following paper:
   year={2025}
 }
 ```
+
+---
+
+## 📜 License
+
+This project is licensed under the **Academic Research License** - see the [LICENSE](LICENSE) file for details.
+
+**Key Points**:
+- ✅ **Permitted**: Academic research, educational use, non-commercial scientific experimentation
+- ❌ **Prohibited**: Any commercial use, including selling, licensing, or revenue generation
+- 📚 **Citation Required**: Academic publications using this software must cite the original paper
+
+For commercial licensing inquiries, please contact the authors.
