@@ -1,0 +1,86 @@
+# AutoMisty AI 项目依赖
+# 修复版本 - 移除本地路径依赖，使用可重建的格式
+
+# 核心AI和机器学习框架
+torch>=2.4.0
+tensorflow>=2.16.0
+transformers>=4.44.0
+sentence-transformers>=3.1.0
+openai>=1.60.0
+anthropic>=0.45.0
+
+# AutoGen 相关
+autogen>=0.7.3
+autogen-agentchat>=0.2.40
+autogenstudio>=0.1.5
+pyautogen>=0.7.3
+
+# 语言模型和嵌入
+langchain>=0.3.19
+langchain-community>=0.3.18
+langchain-core>=0.3.39
+langchain-openai>=0.3.6
+langchain-ollama>=0.2.0
+ollama>=0.3.3
+chromadb>=0.6.3
+
+# 语音和音频处理
+openai-whisper>=20231117
+SpeechRecognition>=3.10.4
+sounddevice>=0.5.0
+soundfile>=0.12.1
+pydub>=0.25.1
+PyAudio>=0.2.14
+librosa>=0.10.2
+vosk>=0.3.44
+gTTS>=2.5.4
+
+# 计算机视觉
+opencv-python>=4.10.0
+opencv-contrib-python>=4.10.0
+mediapipe>=0.10.15
+pillow>=10.4.0
+
+# Web框架和API
+fastapi>=0.115.0
+uvicorn>=0.34.0
+starlette>=0.46.0
+httpx>=0.28.0
+aiohttp>=3.9.0
+requests>=2.32.0
+
+# 数据处理
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.13.0
+scikit-learn>=1.5.0
+
+# 数据库
+chromadb>=0.6.3
+sqlalchemy>=2.0.0
+sqlmodel>=0.0.22
+redis>=5.2.0
+
+# 工具库
+pydantic>=2.11.0
+typer>=0.15.0
+rich>=14.0.0
+loguru>=0.7.3
+click>=8.1.0
+tqdm>=4.67.0
+pyfiglet>=1.0.4
+
+# 开发工具
+ipython>=8.0.0
+jupyter>=1.0.0
+ipdb>=0.13.0
+
+# 系统相关（仅macOS）
+pyobjc>=11.0; sys_platform == "darwin"
+pynput>=1.7.7
+
+# 其他重要依赖
+python-dotenv>=1.1.0
+APScheduler>=3.11.0
+keyboard>=0.13.5
+pygame>=2.6.1
