@@ -114,10 +114,18 @@ def extract_json(content):
 
 # ================ (后续 LLM 配置、Agent 定义、对话逻辑等) ================
 config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST.json")
-llm_config = {"config_list": config_list, "cache_seed": None}
 
+# Extract custom parameters before filtering
 api_key = config_list[0].get("api_key", "YOUR_OPENAI_API_KEY_HERE") if config_list else "YOUR_OPENAI_API_KEY_HERE"
 misty_ip = config_list[0].get("misty_ip", "67.20.195.181") if config_list else "67.20.195.181"
+
+# Filter out custom parameters that OpenAI API doesn't accept
+filtered_config_list = []
+for config in config_list:
+    filtered_config = {k: v for k, v in config.items() if k not in ["misty_ip"]}
+    filtered_config_list.append(filtered_config)
+
+llm_config = {"config_list": filtered_config_list, "cache_seed": None}
 
 initializer = autogen.UserProxyAgent(
     "user_proxy",

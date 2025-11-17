@@ -864,7 +864,9 @@ If the code meets all requirements, must ONLY respond with "EVENTAPPROVED".
 
 import os
 config_list = autogen.config_list_from_json(env_or_file=os.path.join(os.path.dirname(os.path.dirname(__file__)), "OAI_CONFIG_LIST.json"))
-llm_config = {"config_list": config_list, "cache_seed": None}
+# Filter out custom parameters that OpenAI API doesn't accept
+filtered_config_list = [{k: v for k, v in config.items() if k not in ["misty_ip"]} for config in config_list]
+llm_config = {"config_list": filtered_config_list, "cache_seed": None}
 
 
 # ----------------------------------------------------------------------
